@@ -1,0 +1,800 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\controllers\\productcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\repositories\\categoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\repositories\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\repositories\\brandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\services\\transactionservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\entityconfiguration\\productattributeentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\entityconfiguration\\productattributeentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\entityconfiguration\\categoryentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\entityconfiguration\\categoryentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\entityconfiguration\\brandentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\entityconfiguration\\brandentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\entityconfiguration\\variantentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\entityconfiguration\\variantentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\entityconfiguration\\productvariantentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\entityconfiguration\\productvariantentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\entityconfiguration\\productimageentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\entityconfiguration\\productimageentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\entityconfiguration\\productentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\entityconfiguration\\productentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\entityconfiguration\\attributevalueentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\entityconfiguration\\attributevalueentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\entityconfiguration\\attributenameentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\entityconfiguration\\attributenameentityconfiguration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\domainservices\\productdomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\domainservices\\productdomainservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\queries\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\queries\\productquery.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\services\\productservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\models\\aggregates\\product.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\models\\aggregates\\product.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1C559893-24B1-4372-9CBA-C90EF85C83E3}|SolutionItems{1C559893-24B1-4372-9CBA-C90EF85C83E3}|C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Tasks.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{1C559893-24B1-4372-9CBA-C90EF85C83E3}|SolutionItems{1C559893-24B1-4372-9CBA-C90EF85C83E3}|solutionrelative:Tasks.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\models\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\models\\common\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Migrations\\20250424192824_FixBaseModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Merchandise.Infrastructure\\Migrations\\20250424192824_FixBaseModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Migrations\\20250424192519_FixBaseModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Merchandise.Infrastructure\\Migrations\\20250424192519_FixBaseModel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.infrastructure\\extensions\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DEE13B5-AF44-41F6-AB78-C960123DF17B}|Merchandise.Infrastructure\\Merchandise.Infrastructure.csproj|solutionrelative:merchandise.infrastructure\\extensions\\queryableextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\datamodels\\products\\productqueryresultdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\datamodels\\products\\productqueryresultdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\controllers\\weatherforecastcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\dtos\\requests\\product\\productgetdetailresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\dtos\\requests\\product\\productgetdetailresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\interfaces\\domainservices\\iproductdomainservice.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\interfaces\\domainservices\\iproductdomainservice.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\extensions\\datetimeextensions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\dtos\\requests\\product\\productimageaddrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\dtos\\requests\\product\\productimageaddrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\dtos\\requests\\product\\productimagedeleterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\dtos\\requests\\product\\productimagedeleterequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\dtos\\requests\\product\\productimagedeleteresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\dtos\\requests\\product\\productimagedeleteresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\dtos\\requests\\product\\productupdateprimaryimagerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\dtos\\requests\\product\\productupdateprimaryimagerequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\dtos\\requests\\product\\productaddrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\dtos\\requests\\product\\productaddrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Migrations\\20250422214704_FixProductAttributeProperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Merchandise.Infrastructure\\Migrations\\20250422214704_FixProductAttributeProperties.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\dtos\\requests\\product\\productsearchrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\dtos\\requests\\product\\productsearchrequestdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\datamodels\\products\\productqueryfilterdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\datamodels\\products\\productqueryfilterdatamodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\interfaces\\queries\\iproductquery.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\interfaces\\queries\\iproductquery.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\dtos\\responses\\product\\getproductsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\dtos\\responses\\product\\getproductsresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\dtos\\responses\\product\\addproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\dtos\\responses\\product\\addproductresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\interfaces\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\interfaces\\repositories\\icategoryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\interfaces\\repositories\\ibrandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\interfaces\\repositories\\ibrandrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.application\\interfaces\\iproductservice.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{4F0148E1-6468-4366-A332-3C1DE02D4BB2}|Merchandise.Application\\Merchandise.Application.csproj|solutionrelative:merchandise.application\\interfaces\\iproductservice.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\interfaces\\repositories\\iproductimagerepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\interfaces\\repositories\\iproductimagerepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\interfaces\\repositories\\iproductrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\interfaces\\repositories\\iproductrepository.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|c:\\users\\rey\\desktop\\ecommerce.merchandise\\merchandise.domain\\datamodels\\products\\productupdaterequestdatamodel.cs||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{F6B6E97E-91CA-4ADB-BC2F-7908FC7E6D27}|Merchandise.Domain\\Merchandise.Domain.csproj|solutionrelative:merchandise.domain\\datamodels\\products\\productupdaterequestdatamodel.cs||{8B382828-6202-11D1-8870-0000F87579D2}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 5,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\Repositories\\CategoryRepository.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAABUAAABPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T21:38:18.087Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "ProductAttributeEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\ProductAttributeEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\EntityConfiguration\\ProductAttributeEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\ProductAttributeEntityConfiguration.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\EntityConfiguration\\ProductAttributeEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:32:02.036Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ProductImageEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\ProductImageEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\EntityConfiguration\\ProductImageEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\ProductImageEntityConfiguration.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\EntityConfiguration\\ProductImageEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:32:15.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TransactionService.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Services\\TransactionService.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\Services\\TransactionService.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Services\\TransactionService.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\Services\\TransactionService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T21:19:45.908Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "BrandRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Repositories\\BrandRepository.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\Repositories\\BrandRepository.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Repositories\\BrandRepository.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\Repositories\\BrandRepository.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAkAAAA5AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T20:56:51.294Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ProductController.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Controllers\\ProductController.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Controllers\\ProductController.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Controllers\\ProductController.cs",
+              "RelativeToolTip": "Merchandise.Application\\Controllers\\ProductController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T21:00:33.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CategoryEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\CategoryEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\EntityConfiguration\\CategoryEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\CategoryEntityConfiguration.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\EntityConfiguration\\CategoryEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T21:39:13.4Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "BrandEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\BrandEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\EntityConfiguration\\BrandEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\BrandEntityConfiguration.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\EntityConfiguration\\BrandEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T21:39:07.501Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "VariantEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\VariantEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\EntityConfiguration\\VariantEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\VariantEntityConfiguration.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\EntityConfiguration\\VariantEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:32:31.172Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ProductVariantEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\ProductVariantEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\EntityConfiguration\\ProductVariantEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\ProductVariantEntityConfiguration.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\EntityConfiguration\\ProductVariantEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:32:28.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "ProductEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\ProductEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\EntityConfiguration\\ProductEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\ProductEntityConfiguration.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\EntityConfiguration\\ProductEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T21:39:32.31Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ProductDomainService.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\DomainServices\\ProductDomainService.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\DomainServices\\ProductDomainService.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\DomainServices\\ProductDomainService.cs",
+              "RelativeToolTip": "Merchandise.Domain\\DomainServices\\ProductDomainService.cs",
+              "ViewState": "AgIAAGYAAAAAAAAAAAAYwEYAAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:14:32.811Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Tasks.txt",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Tasks.txt",
+              "RelativeDocumentMoniker": "Tasks.txt",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Tasks.txt",
+              "RelativeToolTip": "Tasks.txt",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFcAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-04-20T21:40:53.962Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "AttributeNameEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\AttributeNameEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\EntityConfiguration\\AttributeNameEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\AttributeNameEntityConfiguration.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\EntityConfiguration\\AttributeNameEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:30:14.873Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "AttributeValueEntityConfiguration.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\AttributeValueEntityConfiguration.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\EntityConfiguration\\AttributeValueEntityConfiguration.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\EntityConfiguration\\AttributeValueEntityConfiguration.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\EntityConfiguration\\AttributeValueEntityConfiguration.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAABOAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:30:35.735Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "ProductQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Queries\\ProductQuery.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\Queries\\ProductQuery.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Queries\\ProductQuery.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\Queries\\ProductQuery.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAAwJAAAAAjAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:05:45.94Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Program.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Program.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Program.cs",
+              "RelativeToolTip": "Merchandise.Application\\Program.cs",
+              "ViewState": "AgIAADgAAAAAAAAAAAArwEcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T21:04:23.566Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "IProductRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Repositories\\IProductRepository.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\Interfaces\\Repositories\\IProductRepository.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Repositories\\IProductRepository.cs",
+              "RelativeToolTip": "Merchandise.Domain\\Interfaces\\Repositories\\IProductRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-25T11:40:05.639Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "ProductUpdateRequestDataModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\DataModels\\Products\\ProductUpdateRequestDataModel.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\DataModels\\Products\\ProductUpdateRequestDataModel.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\DataModels\\Products\\ProductUpdateRequestDataModel.cs",
+              "RelativeToolTip": "Merchandise.Domain\\DataModels\\Products\\ProductUpdateRequestDataModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:31:46.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
+              "Title": "ProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Services\\ProductService.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Services\\ProductService.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Services\\ProductService.cs",
+              "RelativeToolTip": "Merchandise.Application\\Services\\ProductService.cs",
+              "ViewState": "AgIAAMMAAAAAAAAAAIA8wNAAAABNAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T21:00:49.661Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Models\\Aggregates\\Product.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\Models\\Aggregates\\Product.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Models\\Aggregates\\Product.cs",
+              "RelativeToolTip": "Merchandise.Domain\\Models\\Aggregates\\Product.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAswB0AAAAmAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-29T19:33:01.992Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "20250424192824_FixBaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Migrations\\20250424192824_FixBaseModel.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\Migrations\\20250424192824_FixBaseModel.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Migrations\\20250424192824_FixBaseModel.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\Migrations\\20250424192824_FixBaseModel.cs",
+              "ViewState": "AgIAAI0AAAAAAAAAAAAYwKAAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:28:24.313Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Models\\Common\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\Models\\Common\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Models\\Common\\BaseEntity.cs",
+              "RelativeToolTip": "Merchandise.Domain\\Models\\Common\\BaseEntity.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:27:03.524Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 21,
+              "Title": "20250424192519_FixBaseModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Migrations\\20250424192519_FixBaseModel.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\Migrations\\20250424192519_FixBaseModel.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Migrations\\20250424192519_FixBaseModel.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\Migrations\\20250424192519_FixBaseModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAYwBUAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T19:25:19.846Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "WeatherForecastController.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Controllers\\WeatherForecastController.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Controllers\\WeatherForecastController.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Controllers\\WeatherForecastController.cs",
+              "RelativeToolTip": "Merchandise.Application\\Controllers\\WeatherForecastController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T22:30:35.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "ProductQueryResultDataModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\DataModels\\Products\\ProductQueryResultDataModel.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\DataModels\\Products\\ProductQueryResultDataModel.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\DataModels\\Products\\ProductQueryResultDataModel.cs",
+              "RelativeToolTip": "Merchandise.Domain\\DataModels\\Products\\ProductQueryResultDataModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T22:19:30.179Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "QueryableExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Extensions\\QueryableExtensions.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\Extensions\\QueryableExtensions.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Extensions\\QueryableExtensions.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\Extensions\\QueryableExtensions.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAgAAAA7AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T16:25:56.586Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 24,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\appsettings.json",
+              "RelativeDocumentMoniker": "Merchandise.Application\\appsettings.json",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\appsettings.json",
+              "RelativeToolTip": "Merchandise.Application\\appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-04-23T22:27:26.932Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "IProductImageRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Repositories\\IProductImageRepository.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\Interfaces\\Repositories\\IProductImageRepository.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Repositories\\IProductImageRepository.cs",
+              "RelativeToolTip": "Merchandise.Domain\\Interfaces\\Repositories\\IProductImageRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-24T18:48:59.977Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 26,
+              "Title": "ProductGetDetailResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductGetDetailResponseDto.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductGetDetailResponseDto.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductGetDetailResponseDto.cs",
+              "RelativeToolTip": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductGetDetailResponseDto.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA1wB0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T16:47:42.408Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "DateTimeExtensions.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Extensions\\DateTimeExtensions.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\Extensions\\DateTimeExtensions.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Extensions\\DateTimeExtensions.cs",
+              "RelativeToolTip": "Merchandise.Domain\\Extensions\\DateTimeExtensions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T21:30:44.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 27,
+              "Title": "IProductDomainService.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\DomainServices\\IProductDomainService.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\Interfaces\\DomainServices\\IProductDomainService.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\DomainServices\\IProductDomainService.cs",
+              "RelativeToolTip": "Merchandise.Domain\\Interfaces\\DomainServices\\IProductDomainService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAsAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T20:07:42.792Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "ProductImageAddRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageAddRequestDto.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageAddRequestDto.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageAddRequestDto.cs",
+              "RelativeToolTip": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageAddRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T19:03:23.843Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "ProductImageDeleteRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageDeleteRequestDto.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageDeleteRequestDto.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageDeleteRequestDto.cs",
+              "RelativeToolTip": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageDeleteRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T19:31:53.099Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "ProductImageDeleteResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageDeleteResponseDto.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageDeleteResponseDto.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageDeleteResponseDto.cs",
+              "RelativeToolTip": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductImageDeleteResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T19:21:43.853Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "ProductUpdatePrimaryImageRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductUpdatePrimaryImageRequestDto.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductUpdatePrimaryImageRequestDto.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductUpdatePrimaryImageRequestDto.cs",
+              "RelativeToolTip": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductUpdatePrimaryImageRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-23T19:05:02.385Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "20250422214704_FixProductAttributeProperties.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Migrations\\20250422214704_FixProductAttributeProperties.cs",
+              "RelativeDocumentMoniker": "Merchandise.Infrastructure\\Migrations\\20250422214704_FixProductAttributeProperties.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Infrastructure\\Migrations\\20250422214704_FixProductAttributeProperties.cs",
+              "RelativeToolTip": "Merchandise.Infrastructure\\Migrations\\20250422214704_FixProductAttributeProperties.cs",
+              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T21:47:05.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 35,
+              "Title": "ProductSearchRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductSearchRequestDto.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductSearchRequestDto.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductSearchRequestDto.cs",
+              "RelativeToolTip": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductSearchRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T14:18:34.87Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 33,
+              "Title": "ProductAddRequestDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductAddRequestDto.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductAddRequestDto.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Requests\\Product\\ProductAddRequestDto.cs",
+              "RelativeToolTip": "Merchandise.Application\\Dtos\\Requests\\Product\\ProductAddRequestDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAASAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T21:26:36.978Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
+              "Title": "ProductQueryFilterDataModel.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\DataModels\\Products\\ProductQueryFilterDataModel.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\DataModels\\Products\\ProductQueryFilterDataModel.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\DataModels\\Products\\ProductQueryFilterDataModel.cs",
+              "RelativeToolTip": "Merchandise.Domain\\DataModels\\Products\\ProductQueryFilterDataModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-22T13:37:55.662Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 37,
+              "Title": "IProductQuery.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Queries\\IProductQuery.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\Interfaces\\Queries\\IProductQuery.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Queries\\IProductQuery.cs",
+              "RelativeToolTip": "Merchandise.Domain\\Interfaces\\Queries\\IProductQuery.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAuwAgAAAA2AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:38:44.52Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 39,
+              "Title": "AddProductResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Responses\\Product\\AddProductResponseDto.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Dtos\\Responses\\Product\\AddProductResponseDto.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Responses\\Product\\AddProductResponseDto.cs",
+              "RelativeToolTip": "Merchandise.Application\\Dtos\\Responses\\Product\\AddProductResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T21:27:45.826Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
+              "Title": "GetProductsResponseDto.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Responses\\Product\\GetProductsResponseDto.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Dtos\\Responses\\Product\\GetProductsResponseDto.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Dtos\\Responses\\Product\\GetProductsResponseDto.cs",
+              "RelativeToolTip": "Merchandise.Application\\Dtos\\Responses\\Product\\GetProductsResponseDto.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAkAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-21T20:07:00.355Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 42,
+              "Title": "IProductService.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Interfaces\\IProductService.cs",
+              "RelativeDocumentMoniker": "Merchandise.Application\\Interfaces\\IProductService.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Application\\Interfaces\\IProductService.cs",
+              "RelativeToolTip": "Merchandise.Application\\Interfaces\\IProductService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T21:28:49.38Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
+              "Title": "ICategoryRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Repositories\\ICategoryRepository.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\Interfaces\\Repositories\\ICategoryRepository.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Repositories\\ICategoryRepository.cs",
+              "RelativeToolTip": "Merchandise.Domain\\Interfaces\\Repositories\\ICategoryRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T20:58:52.71Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 41,
+              "Title": "IBrandRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Repositories\\IBrandRepository.cs",
+              "RelativeDocumentMoniker": "Merchandise.Domain\\Interfaces\\Repositories\\IBrandRepository.cs",
+              "ToolTip": "C:\\Users\\Rey\\Desktop\\ecommerce.merchandise\\Merchandise.Domain\\Interfaces\\Repositories\\IBrandRepository.cs",
+              "RelativeToolTip": "Merchandise.Domain\\Interfaces\\Repositories\\IBrandRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAlAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-04-20T20:55:08.611Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

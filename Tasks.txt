@@ -1,0 +1,103 @@
+1. Create Tables
+	* BaseEntity (for all entities)
+		- Id (PK)
+		- DateTimeCreated
+		- DateTimeUpdated
+		- CreatedBy (FK to User)
+		- UpdatedBy (FK to User)
+		- IsDeleted (soft delete)
+		- IsActive
+		- IsArchived
+
+	* Product : BaseEntity
+		- Name
+		- BrandId
+		- CategoryId
+		- Price
+		- Description
+
+	* Brand : BaseEntity
+		- Name (Unique)
+		- Logo (Url)
+		- Description
+
+	* Category : BaseEntity
+		- Name (Unique)
+		- Description
+		- ParentCategory (FK to Category) default null
+		- IsRootCategory (default false)
+
+	* Variant : BaseEntity
+		- Name
+
+	* AttrubuteName : BaseEntity (color, size, etc.)
+		- Name
+
+	* AttrubuteValue : BaseEntity (color, size, etc.)
+		- AttrubuteNameId
+		- Value
+
+	* ProductImage : BaseEntity
+		- ProductId
+		- ProductDetailId
+		- IsPrimary (boolean) default false
+		- IsThumbnail (boolean) default false
+		- Image (Url)
+
+	* UserAccount (TBA)
+		- FirstName
+		- LastName
+		- Email (Unique)
+
+2. Brand Crud
+	- Create
+		- Logo is required.
+		- Name is required.
+		- Description is optional.
+
+	- Read
+		- Show all brands.
+		- Show brand by id.
+		- Search By Name
+
+	- Update
+		- Name is required.
+		- Description is optional.
+		- Can change logo image (select from images uploaded)
+		- Can add another logo image
+		
+	- Delete
+		- Soft delete (IsDeleted = true)
+		- If product details are associated with the brand, show a warning message and prevent brand from deletion.
+			- Show all product details with that brand.
+
+3. Category Crud
+	- Create
+	- Read
+	- Update
+	- Delete
+
+4. Product Crud (with images)
+	* Create
+	* Read All
+	* Search By Filter (Name, Category, Brand, Price Range)
+	* Read By Id (Full Details)
+	- Update 
+	  - Details
+	  * Add image/s
+	  * Remove image/s
+	  * Set primary image
+	- Delete
+	- Athorization - Only admin can create, update and delete
+
+5. Variant Crud
+	- Create
+	- Read
+	- Update
+	- Delete
+
+6. Attribute Crud
+	- Create
+	- Read
+	- Update
+	- Delete
