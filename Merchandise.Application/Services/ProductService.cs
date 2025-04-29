@@ -104,13 +104,12 @@ namespace Merchandise.Application.Services
             };
         }
 
-        public async Task<ProductGetDetailResponseDto> GetProductByIdAsync(Guid id, string imagePath)
+        public async Task<ProductGetDetailResponseDto?> GetProductByIdAsync(Guid id, string imagePath)
         {
             var productDetail = await _productQuery.GetProductByIdAsync(id);
 
             return productDetail is null
-                ? new ProductGetDetailResponseDto()
-                : new ProductGetDetailResponseDto()
+                ? null : new ProductGetDetailResponseDto()
                 {
                     Id = productDetail.Product.Id,
                     BrandId = productDetail.Brand is null ? null : productDetail.Brand.Id,
@@ -214,6 +213,11 @@ namespace Merchandise.Application.Services
                 Product = request,
                 Status = result.Status
             };
+        }
+
+        public async Task<bool> DeleteProductAsync(ProductDeleteRequestDto product)
+        {
+            return await _productDomainService.DeleteProductAsync(product.Id, product.DateTimeLastUpdated);
         }
 
         private async Task UploadImages(List<ProductImageViewModel> images) 

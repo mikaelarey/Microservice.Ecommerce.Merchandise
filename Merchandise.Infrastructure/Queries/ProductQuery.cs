@@ -91,6 +91,8 @@ namespace Merchandise.Infrastructure.Queries
                                             join productAttribute in _dbContext.ProductAttribute
                                                 on attributeValue.Id equals productAttribute.ProductAttributeValueId
                                             where productAttribute.ProductId == product.Id
+                                                && !product.IsDeleted
+                                                && product.IsActive
                                             select new ProductAttributeDataModel
                                             {
                                                 AttributeValue = attributeValue,
@@ -98,7 +100,7 @@ namespace Merchandise.Infrastructure.Queries
                                                 AttributeName = attributeName
                                             }).ToList()
 
-                          where product.Id == id
+                          where product.Id == id && !product.IsDeleted && product.IsActive
 
                           select new ProductDetailQueryResultDataModel
                           {
@@ -128,6 +130,8 @@ namespace Merchandise.Infrastructure.Queries
                        .OrderByDescending(i => i.IsPrimary)
                        .ThenBy(i => i.Id)
                        .FirstOrDefault()
+
+                    where !product.IsDeleted && product.IsActive
 
                     select new ProductQueryDataModel
                     { 

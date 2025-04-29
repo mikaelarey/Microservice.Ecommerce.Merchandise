@@ -1,6 +1,5 @@
 ﻿using Merchandise.Application.Dtos.Requests.Product;
 using Merchandise.Application.Interfaces;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Merchandise.Application.Controllers
@@ -16,7 +15,7 @@ namespace Merchandise.Application.Controllers
             _productService = productService;
         }
 
-        #region AddProduct
+        #region POST Add Product
         [HttpPost("Add")]
         public async Task<IActionResult> AddProduct(ProductAddRequestDto product)
         {
@@ -31,7 +30,7 @@ namespace Merchandise.Application.Controllers
         }
         #endregion
 
-        #region GetProducts
+        #region GET Get Products
         [HttpGet("Get")]
         public async Task<IActionResult> GetProducts(int pageNo)
         {
@@ -41,23 +40,17 @@ namespace Merchandise.Application.Controllers
         }
         #endregion
 
-        #region GetProductById
+        #region GET Get Product By Id
         [HttpGet("Detail/{id:guid}")]
         public async Task<IActionResult> GetProductById(Guid id)
         {
             var imagePath = GetImagePath();
             var result = await _productService.GetProductByIdAsync(id, imagePath);
-
-            if (result == null)
-            {
-                return NotFound();
-            }
-
-            return Ok(result);
+            return (result == null) ? NotFound() : Ok(result);
         }
         #endregion
 
-        #region SearchProducts
+        #region POST Search Products
         [HttpPost("Search")]
         public async Task<IActionResult> SearchProducts(ProductSearchRequestDto request)
         {
@@ -66,21 +59,19 @@ namespace Merchandise.Application.Controllers
         }
         #endregion
 
-        
+        #region PUT Update Product Detail
         [HttpPut("Update")]
         public async Task<IActionResult> UpdateProductDetail(ProductUpdateRequestDto request)
         {
             // TODO: Check roles
             // TODO: Fix CreatedBy
             var result = await _productService.UpdateProductDetailAsync(request);
-
-            return (result.ErrorMessages is not null)
-                ? BadRequest(result)
-                : Ok(result);
+            return result.ErrorMessages is not null ? BadRequest(result) : Ok(result);
         }
+        #endregion
 
-        #region AddProductImages
-        [HttpPut("AddImages")]
+        #region POST Add Product Images
+        [HttpPost("AddImages")]
         public async Task<IActionResult> AddProductImages(ProductImageAddRequestDto request)
         {
             // TODO: Check roles
@@ -91,41 +82,40 @@ namespace Merchandise.Application.Controllers
         }
         #endregion
 
-        #region DeleteProductImages
-        [HttpPut("DeleteImages")]
+        #region DELETE Delete Product Images
+        [HttpDelete("DeleteImages")]
         public async Task<IActionResult> DeleteProductImages(ProductImageDeleteRequestDto request)
         {
             // TODO: Check roles
             // TODO: Fix CreatedBy
             var result = await _productService.DeleteProductImagesAsync(request);
 
-            if (result.DeletedImageIds is not null && result.DeletedImageIds.Any())
-            {
-                return Ok(result);
-            }
-
-            return BadRequest(new { Errors = "There's an error while deleting product image/s." });
+            return result.DeletedImageIds is not null && result.DeletedImageIds.Any()
+                ? Ok(result) : BadRequest(new { Errors = "There's an error while deleting product image/s." });
         }
         #endregion
 
-        #region SetPrimaryProductImages
+        #region PUT Set Primary Product Images
         [HttpPut("SetPrimaryImage")]
         public async Task<IActionResult> SetPrimaryProductImages(ProductUpdatePrimaryImageRequestDto request)
         {
             // TODO: Check roles
             // TODO: Fix CreatedBy
             var result = await _productService.SetPrimaryProductImagesAsync(request);
-
-            if (!result)
-            {
-                return BadRequest(new { Errors = new[] { "Failed to set primary image." } });
-            }
-
-            return Ok();
+            return !result ? BadRequest(new { Errors = new[] { "Failed to set primary image." } }) : Ok();
         }
         #endregion
 
-        #region GetImagePath
+        [HttpDelete("Delete")]
+        public async Task<IActionResult> DeleteProduct(ProductDeleteRequestDto product)
+        {
+            // TODO: Check roles
+            // TODO: Fix CreatedBy
+            var result = await _productService.DeleteProductAsync(product);
+            return !result ? BadRequest(new { Errors = new[] { "Failed to delete product." } }) : Ok();
+        }
+
+        #region PRIVATE Get Image Path
         private string GetImagePath()
         {
             var request = HttpContext.Request;

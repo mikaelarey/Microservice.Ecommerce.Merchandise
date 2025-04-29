@@ -49,5 +49,15 @@ namespace Merchandise.Domain.Models.Common
         {
             DateTimeLastUpdated = date;
         }
+
+        public void SetIsActive(bool isActive)
+        {
+            IsActive = isActive;
+        }
+
+        public void SetIsDeleted(bool isDeleted)
+        {
+            IsDeleted = isDeleted;
+        }
     }
 }

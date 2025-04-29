@@ -295,5 +295,29 @@ namespace Merchandise.Domain.DomainServices
             response.Status = "Success";
             return response;
         }
+
+        public async Task<bool> DeleteProductAsync(Guid id, DateTimeOffset dateTimeLastUpdated)
+        {
+            var product = await _productRepository.GetProductByIdAsync(id);
+
+            if (product is not null)
+            {
+                if (!product.DateTimeLastUpdated.Equals(dateTimeLastUpdated) || product.IsDeleted)
+                {
+                    return false;
+                }
+
+                product.SetIsDeleted(true);
+                product.SetIsActive(false);
+
+                //product.SetUpdatedBy(updatedBy);
+                product.SetDateTimeLastUpdated();
+
+                _productRepository.Update(product);
+                return await _productRepository.SaveChangesAsync();
+            }
+
+            return false;
+        }
     }
 }

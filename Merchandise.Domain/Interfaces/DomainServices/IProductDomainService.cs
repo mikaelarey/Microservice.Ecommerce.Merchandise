@@ -13,5 +13,6 @@ namespace Merchandise.Domain.Interfaces.DomainServices
         Task<IEnumerable<Guid>> DeleteProductImagesAsync(Guid productId, IEnumerable<Guid> imageIds);
         Task<bool> SetProductPrimaryImageAsync(Guid productId, Guid productImageId);
         Task<ProductUpdateResponseDataModel> UpdateProductDetailAsync(ProductUpdateRequestDataModel product);
+        Task<bool> DeleteProductAsync(Guid id, DateTimeOffset dateTimeLastUpdated);
     }
 }
