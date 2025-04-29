@@ -1,0 +1,9 @@
+Merchandise.Application/bin
+Merchandise.Application/obj
+Merchandise.Application/wwwroot
+
+Merchandise.Domain/bin
+Merchandise.Domain/obj
+
+Merchandise.Infrastructure/bin
+Merchandise.Infrastructure/obj
