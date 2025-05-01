@@ -15,21 +15,6 @@ namespace Merchandise.Application.Controllers
             _productService = productService;
         }
 
-        #region POST Add Product
-        [HttpPost("Add")]
-        public async Task<IActionResult> AddProduct(ProductAddRequestDto product)
-        {
-            // TODO: Check roles
-            // TODO: Fix CreatedBy
-            var createdBy = User.Identity?.Name ?? string.Empty;
-            var result = await _productService.AddProductAsync(product);
-
-            return result.ErrorMessage.Any()
-                ? BadRequest(new { Errors = result.ErrorMessage })
-                : Created(string.Empty, new { Id = result.Id });
-        }
-        #endregion
-
         #region GET Get Products
         [HttpGet("Get")]
         public async Task<IActionResult> GetProducts(int pageNo)
@@ -47,6 +32,33 @@ namespace Merchandise.Application.Controllers
             var imagePath = GetImagePath();
             var result = await _productService.GetProductByIdAsync(id, imagePath);
             return (result == null) ? NotFound() : Ok(result);
+        }
+        #endregion
+
+        #region POST Add Product
+        [HttpPost("Add")]
+        public async Task<IActionResult> AddProduct(ProductAddRequestDto product)
+        {
+            // TODO: Check roles
+            // TODO: Fix CreatedBy
+            var createdBy = User.Identity?.Name ?? string.Empty;
+            var result = await _productService.AddProductAsync(product);
+
+            return result.ErrorMessage.Any()
+                ? BadRequest(new { Errors = result.ErrorMessage })
+                : Created(string.Empty, new { Id = result.Id });
+        }
+        #endregion
+
+        #region POST Add Product Images
+        [HttpPost("AddImages")]
+        public async Task<IActionResult> AddProductImages(ProductImageAddRequestDto request)
+        {
+            // TODO: Check roles
+            // TODO: Fix CreatedBy
+            var imagePath = GetImagePath();
+            var result = await _productService.AddProductImagesAsync(request, imagePath);
+            return Ok(result);
         }
         #endregion
 
@@ -70,15 +82,14 @@ namespace Merchandise.Application.Controllers
         }
         #endregion
 
-        #region POST Add Product Images
-        [HttpPost("AddImages")]
-        public async Task<IActionResult> AddProductImages(ProductImageAddRequestDto request)
+        #region PUT Set Primary Product Images
+        [HttpPut("SetPrimaryImage")]
+        public async Task<IActionResult> SetPrimaryProductImages(ProductUpdatePrimaryImageRequestDto request)
         {
             // TODO: Check roles
             // TODO: Fix CreatedBy
-            var imagePath = GetImagePath();
-            var result = await _productService.AddProductImagesAsync(request, imagePath);
-            return Ok(result);
+            var result = await _productService.SetPrimaryProductImagesAsync(request);
+            return !result ? BadRequest(new { Errors = new[] { "Failed to set primary image." } }) : Ok();
         }
         #endregion
 
@@ -95,17 +106,7 @@ namespace Merchandise.Application.Controllers
         }
         #endregion
 
-        #region PUT Set Primary Product Images
-        [HttpPut("SetPrimaryImage")]
-        public async Task<IActionResult> SetPrimaryProductImages(ProductUpdatePrimaryImageRequestDto request)
-        {
-            // TODO: Check roles
-            // TODO: Fix CreatedBy
-            var result = await _productService.SetPrimaryProductImagesAsync(request);
-            return !result ? BadRequest(new { Errors = new[] { "Failed to set primary image." } }) : Ok();
-        }
-        #endregion
-
+        #region DELETE Delete Product
         [HttpDelete("Delete")]
         public async Task<IActionResult> DeleteProduct(ProductDeleteRequestDto product)
         {
@@ -114,6 +115,7 @@ namespace Merchandise.Application.Controllers
             var result = await _productService.DeleteProductAsync(product);
             return !result ? BadRequest(new { Errors = new[] { "Failed to delete product." } }) : Ok();
         }
+        #endregion
 
         #region PRIVATE Get Image Path
         private string GetImagePath()

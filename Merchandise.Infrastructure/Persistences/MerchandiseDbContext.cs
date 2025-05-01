@@ -9,11 +9,12 @@ namespace Merchandise.Infrastructure.Persistences
     {
         public MerchandiseDbContext(DbContextOptions<MerchandiseDbContext> options) 
             : base(options) { }
-        
+
+        public DbSet<CodeDecodeAttribute> CodeDecodeAttribute { get; set; }
+
         public DbSet<Product> Product { get; set; }
         public DbSet<Brand> Brand { get; set; }
         public DbSet<Category> Category { get; set; }
-        public DbSet<AttributeName> AttributeName { get; set; }
         public DbSet<AttributeValue> AttributeValue { get; set; }
         public DbSet<Variant> Variant { get; set; }
         public DbSet<ProductImage> ProductImage { get; set; }
@@ -29,7 +30,7 @@ namespace Merchandise.Infrastructure.Persistences
             modelBuilder.ApplyConfiguration(new ProductImageEntityConfiguration());
             modelBuilder.ApplyConfiguration(new BrandEntityConfiguration());
             modelBuilder.ApplyConfiguration(new CategoryEntityConfiguration());
-            modelBuilder.ApplyConfiguration(new AttributeNameEntityConfiguration());
+            modelBuilder.ApplyConfiguration(new CodeDecodeAttributeEntityConfiguration());
             modelBuilder.ApplyConfiguration(new AttributeValueEntityConfiguration());
             modelBuilder.ApplyConfiguration(new VariantEntityConfiguration());
             modelBuilder.ApplyConfiguration(new ProductVariantEntityConfiguration());

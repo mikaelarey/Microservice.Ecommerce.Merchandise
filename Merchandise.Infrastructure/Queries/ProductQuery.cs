@@ -85,9 +85,9 @@ namespace Merchandise.Infrastructure.Queries
                                               Variant = variant
                                           }).ToList()
 
-                          let attributes = (from attributeName in _dbContext.AttributeName
+                          let attributes = (from codeAttribute in _dbContext.CodeDecodeAttribute
                                             join attributeValue in _dbContext.AttributeValue 
-                                                on attributeName.Id equals attributeValue.AttributeNameId
+                                                on codeAttribute.Id equals attributeValue.AttributeNameId
                                             join productAttribute in _dbContext.ProductAttribute
                                                 on attributeValue.Id equals productAttribute.ProductAttributeValueId
                                             where productAttribute.ProductId == product.Id
@@ -97,7 +97,7 @@ namespace Merchandise.Infrastructure.Queries
                                             {
                                                 AttributeValue = attributeValue,
                                                 ProductAttribute = productAttribute,
-                                                AttributeName = attributeName
+                                                CodeAttribute = codeAttribute
                                             }).ToList()
 
                           where product.Id == id && !product.IsDeleted && product.IsActive

@@ -126,7 +126,7 @@ namespace Merchandise.Application.Services
                             Url = imagePath + x.ImageUrl
                         }).ToList(),
                     Attributes = productDetail.Attributes
-                        .GroupBy(v => v.AttributeName.Name)
+                        .GroupBy(v => v.CodeAttribute.Name)
                         .Select(g => new VariantAttribute
                         {
                             Name = g.Key,

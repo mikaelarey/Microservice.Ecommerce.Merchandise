@@ -1,4 +1,5 @@
 ﻿using Merchandise.Infrastructure.Persistences;
+using Merchandise.Infrastructure.Seeder;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.DependencyInjection;
 
@@ -16,6 +17,8 @@ namespace Merchandise.Infrastructure.Services
             {
                 context.Database.Migrate();
             }
+
+            CodeDecodeAttributeSeeder.Seed(context);
         }
     }
 }

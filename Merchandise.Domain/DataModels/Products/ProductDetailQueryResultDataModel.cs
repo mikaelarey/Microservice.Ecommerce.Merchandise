@@ -21,7 +21,7 @@ namespace Merchandise.Domain.DataModels.Products
     public class ProductAttributeDataModel
     {
         public ProductAttribute ProductAttribute { get; set; }
-        public AttributeName AttributeName { get; set; }
+        public CodeDecodeAttribute CodeAttribute { get; set; }
         public AttributeValue AttributeValue { get; set; }
     }
 }

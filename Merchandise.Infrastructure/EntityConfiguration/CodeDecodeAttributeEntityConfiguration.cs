@@ -4,9 +4,9 @@ using Microsoft.EntityFrameworkCore.Metadata.Builders;
 
 namespace Merchandise.Infrastructure.EntityConfiguration
 {
-    public class AttributeNameEntityConfiguration : IEntityTypeConfiguration<AttributeName>
+    public class CodeDecodeAttributeEntityConfiguration : IEntityTypeConfiguration<CodeDecodeAttribute>
     {
-        public void Configure(EntityTypeBuilder<AttributeName> builder)
+        public void Configure(EntityTypeBuilder<CodeDecodeAttribute> builder)
         {
             // Key
             builder.HasKey(p => p.Id);
@@ -17,6 +17,7 @@ namespace Merchandise.Infrastructure.EntityConfiguration
 
             // Indexes
             builder.HasIndex(p => p.Name).IsUnique();
+            builder.HasIndex(p => p.Code).IsUnique();
         }
     }
 }
