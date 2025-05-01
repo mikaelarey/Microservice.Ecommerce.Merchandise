@@ -7,7 +7,7 @@ namespace Merchandise.Domain.Interfaces.DomainServices
 {
     public interface IProductDomainService
     {
-        Task<ProductAddResultDataModel> AddProductAsync(AddProductViewModel productViewModel);
+        Task<ProductAddResultDataModel> AddProductAsync(ProductAddViewModel productViewModel);
         Task<SearchResultDataModel<ProductQueryResultDataModel>> SearchProductsAsync(ProductQueryFilterDataModel request);
         Task<IEnumerable<ProductImage>?> AddProductImagesAsync(IEnumerable<ProductImageViewModel> images, Guid productId);
         Task<IEnumerable<Guid>> DeleteProductImagesAsync(Guid productId, IEnumerable<Guid> imageIds);

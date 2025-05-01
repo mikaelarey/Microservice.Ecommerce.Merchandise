@@ -36,7 +36,7 @@ namespace Merchandise.Application.Services
                     Image = x
                 }).ToList();
 
-            var productViewModel = new AddProductViewModel
+            var productViewModel = new ProductAddViewModel
             {
                 BrandId = product.BrandId,
                 CategoryId = product.CategoryId,

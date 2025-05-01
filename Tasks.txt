@@ -82,12 +82,12 @@
 	* Read All
 	* Search By Filter (Name, Category, Brand, Price Range)
 	* Read By Id (Full Details)
-	- Update 
-	  - Details
+	* Update 
+	  * Details
 	  * Add image/s
 	  * Remove image/s
 	  * Set primary image
-	- Delete
+	* Delete
 	- Athorization - Only admin can create, update and delete
 
 5. Variant Crud

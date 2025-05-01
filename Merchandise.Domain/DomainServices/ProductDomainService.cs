@@ -33,7 +33,7 @@ namespace Merchandise.Domain.DomainServices
         }
 
         #region AddProductAsync
-        public async Task<ProductAddResultDataModel> AddProductAsync(AddProductViewModel productViewModel)
+        public async Task<ProductAddResultDataModel> AddProductAsync(ProductAddViewModel productViewModel)
         {
             var errorMessages = new List<string>();
             var response = new ProductAddResultDataModel();
