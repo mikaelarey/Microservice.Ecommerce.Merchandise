@@ -26,9 +26,11 @@ builder.Services.AddHttpContextAccessor();
 
 // Application Service
 builder.Services.AddScoped<IProductService, ProductService>();
+builder.Services.AddScoped<ICategoryService, CategoryService>();
 
 // Domain Service
 builder.Services.AddScoped<IProductDomainService, ProductDomainService>();
+builder.Services.AddScoped<ICategoryDomainService, CategoryDomainService>();
 
 // Repositories
 builder.Services.AddScoped<IProductRepository, ProductRepository>();

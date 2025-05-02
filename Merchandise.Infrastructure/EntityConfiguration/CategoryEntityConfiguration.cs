@@ -18,6 +18,7 @@ namespace Merchandise.Infrastructure.EntityConfiguration
 
             // Indexes
             builder.HasIndex(p => p.Name).IsUnique();
+            builder.HasIndex(p => p.ParentCategoryId).HasDatabaseName("IX_Category_ParentCategoryId");
         }
     }
 }

@@ -15,6 +15,15 @@ namespace Merchandise.Infrastructure.Repositories
         {
             _dbContext = dbContext;
         }
+        public void Update(Product product)
+        {
+            _dbContext.Product.Update(product);
+        }
+
+        public async Task<bool> SaveChangesAsync()
+        {
+            return await _dbContext.SaveChangesAsync() > 0;
+        }
 
         public async Task<ProductAddDataModel> AddProduct(ProductAddDataModel product)
         {
@@ -58,14 +67,12 @@ namespace Merchandise.Infrastructure.Repositories
                 .FirstOrDefaultAsync();
         }
 
-        public void Update(Product product) 
+        public async Task<IEnumerable<Product>> GetProductsByCategoriesAsync(IEnumerable<Guid> categoryIds)
         {
-            _dbContext.Product.Update(product);
-        }
-
-        public async Task<bool> SaveChangesAsync()
-        {
-            return await _dbContext.SaveChangesAsync() > 0;
+            return await _dbContext.Product
+                .AsNoTracking()
+                .Where(x => categoryIds.Contains(x.CategoryId) && !x.IsDeleted && x.IsActive && !x.IsArchived)
+                .ToListAsync();
         }
     }
 }

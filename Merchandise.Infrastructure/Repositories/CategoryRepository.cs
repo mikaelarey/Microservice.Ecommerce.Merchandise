@@ -17,13 +17,66 @@ namespace Merchandise.Infrastructure.Repositories
             _dbContext = _dbContextFactory.CreateDbContext();
         }
 
-        public async Task<Category?> GetCategoryByIdAsync(Guid categoryId)
+        public void Add(Category category)
+        {
+            _dbContext.Category.Add(category);
+        }
+
+        public void Update(Category category)
+        {
+            _dbContext.Category.Update(category);
+        }
+
+        public void Remove(Category category)
+        {
+            _dbContext.Category.Remove(category);
+        }
+
+        public async Task<bool> SaveChangesAsync()
+        {
+            return await _dbContext.SaveChangesAsync() > 0;
+        }
+
+        public async Task<Category?> GetCategoryByIdAsync(Guid categoryId, bool isTrack = false)
         {
             // await using var dbContext = _dbContextFactory.CreateDbContext();
 
-            return await _dbContext.Category
-                .AsNoTracking()
+            var query = _dbContext.Category.AsQueryable();
+
+            if (!isTrack)
+            {
+                query.AsNoTracking();
+            }
+
+            return await query
+                .Where(x => x.IsActive && !x.IsDeleted && !x.IsArchived)
                 .FirstOrDefaultAsync(c => c.Id == categoryId);
         }
+
+        public async Task<Category?> GetCategoryByNameAsync(string name)
+        {
+            return await _dbContext.Category
+                .AsNoTracking()
+                .Where(x => x.IsActive && !x.IsDeleted && !x.IsArchived)
+                .FirstOrDefaultAsync(c => c.Name == name);
+        }
+
+        public async Task<Category?> GetCategoryByIdAndNameAsync(string name, Guid id)
+        {
+            return await _dbContext.Category
+                .AsNoTracking()
+                .Where(x => x.IsActive && !x.IsDeleted && !x.IsArchived)
+                .FirstOrDefaultAsync(c => c.Name == name && c.Id != id);
+        }
+
+        public async Task<IEnumerable<Category>> GetActiveCategoriesAsync()
+        {
+            return await _dbContext.Category
+                .AsNoTracking()
+                .Where(x => x.IsActive && !x.IsDeleted && !x.IsArchived)
+                .ToListAsync();
+        }
+
+        
     }
 }
