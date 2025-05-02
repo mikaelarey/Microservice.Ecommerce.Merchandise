@@ -64,7 +64,7 @@ namespace Merchandise.Domain.DomainServices
             return BuildTree(categories);
         }
 
-        public async Task<CategoryUpdateResponseDataModel> UpdateCategoryAsync(Guid id, string name, string? description, Guid? categoryParentId)
+        public async Task<CategoryUpdateResponseDataModel> UpdateCategoryAsync(Guid id, string name, DateTimeOffset dateTimeLastUpdated, string? description, Guid? categoryParentId)
         {
             var response = new CategoryUpdateResponseDataModel();
             var category = await _categoryRepository.GetCategoryByIdAsync(id, true);
@@ -101,6 +101,13 @@ namespace Merchandise.Domain.DomainServices
             }
 
             // TODO: Check concurrency
+            if (!category.DateTimeLastUpdated.Equals(dateTimeLastUpdated))
+            {
+                response.Status = RequestResponseStatus.Failed;
+                response.ErrorMessage = CategoryMessage.CategoryHasBeenPreviouslyUpdatedErrorMessage;
+
+                return response;
+            }
 
             category.SetName(name);
             category.SetDescription(description);
@@ -118,7 +125,7 @@ namespace Merchandise.Domain.DomainServices
             return response;
         }
 
-        public async Task<CategoryDeleteResponseDataModel> DeleteCategoryAsync(Guid categoryId)
+        public async Task<CategoryDeleteResponseDataModel> DeleteCategoryAsync(Guid categoryId, DateTimeOffset dateTimeLastUpdated)
         {
             var response = new CategoryDeleteResponseDataModel();
             var category = await _categoryRepository.GetCategoryByIdAsync(categoryId, true);
@@ -155,7 +162,13 @@ namespace Merchandise.Domain.DomainServices
                 return response;
             }
 
-            // TODO: Check concurrency
+            if (!category.DateTimeLastUpdated.Equals(dateTimeLastUpdated))
+            {
+                response.Status = RequestResponseStatus.Failed;
+                response.ErrorMessage = CategoryMessage.CategoryHasBeenPreviouslyUpdatedErrorMessage;
+
+                return response;
+            }
 
             category.SetIsActive(false);
             category.SetIsDeleted(true);

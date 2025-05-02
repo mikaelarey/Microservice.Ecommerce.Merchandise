@@ -5,7 +5,6 @@ using Merchandise.Domain.DataModels.Products;
 using Merchandise.Domain.Interfaces.DomainServices;
 using Merchandise.Domain.Interfaces.Queries;
 using Merchandise.Domain.ViewModels.Products;
-using Microsoft.AspNetCore.Http.HttpResults;
 
 namespace Merchandise.Application.Services
 {
@@ -88,7 +87,8 @@ namespace Merchandise.Application.Services
                 Images = result.Select(x => new ProductImage
                     { 
                         Id = x.Id,
-                        Url = x.ImageUrl
+                        Url = imagePath + x.ImageUrl,
+                        FileName = x.ImageUrl
                     }).ToList()
             };
         }
@@ -97,9 +97,19 @@ namespace Merchandise.Application.Services
         {
             var result = await _productDomainService.DeleteProductImagesAsync(request.ProductId, request.ImageIds);
 
+            foreach (var item in result)
+            {
+                var filePath = Path.Combine(Directory.GetCurrentDirectory(), "wwwroot", "Images", "Products", item.FileName);
+
+                if (File.Exists(filePath))
+                {
+                    File.Delete(filePath);
+                }
+            }
+
             return new ProductImageDeleteResponseDto
             {
-                DeletedImageIds = result,
+                DeletedImageIds = result.Select(x => x.Id).ToList(),
                 ProductId = request.ProductId
             };
         }
@@ -123,7 +133,8 @@ namespace Merchandise.Application.Services
                     Images = productDetail.Images.Select(x => new ProductImage
                         {
                             Id = x.Id,
-                            Url = imagePath + x.ImageUrl
+                            Url = imagePath + x.ImageUrl,
+                            FileName = x.ImageUrl
                         }).ToList(),
                     Attributes = productDetail.Attributes
                         .GroupBy(v => v.CodeAttribute.Name)

@@ -35,9 +35,9 @@ namespace Merchandise.Application.Services
             };
         }
 
-        public async Task<CategoryDeleteResponseDataModel> DeleteCategoryAsync(Guid categoryId)
+        public async Task<CategoryDeleteResponseDataModel> DeleteCategoryAsync(CategoryDeleteRequestDto category)
         {
-            return await _categoryDomainService.DeleteCategoryAsync(categoryId);
+            return await _categoryDomainService.DeleteCategoryAsync(category.Id, category.DateTimeLastUpdate);
         }
 
         public async Task<List<CategoryDataModel>> GetActiveCategoriesAsync()
@@ -47,7 +47,7 @@ namespace Merchandise.Application.Services
 
         public async Task<CategoryUpdateResponseDto> UpdateCategoryAsync(CategoryUpdateRequestDto category)
         {
-            var result = await _categoryDomainService.UpdateCategoryAsync(category.Id, category.Name, category.Description, category.CategoryParentId);
+            var result = await _categoryDomainService.UpdateCategoryAsync(category.Id, category.Name, category.DateTimeLastUpdated, category.Description, category.CategoryParentId);
 
             return new CategoryUpdateResponseDto
             {

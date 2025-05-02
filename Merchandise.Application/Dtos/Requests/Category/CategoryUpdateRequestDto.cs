@@ -3,5 +3,6 @@
     public class CategoryUpdateRequestDto : CategoryAddRequestDto
     {
         public Guid Id { get; set; }
+        public DateTimeOffset DateTimeLastUpdated { get; set; }
     }
 }

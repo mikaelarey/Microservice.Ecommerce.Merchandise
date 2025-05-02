@@ -7,8 +7,8 @@ namespace Merchandise.Domain.Interfaces.DomainServices
     {
         Task<CategoryAddResponseDataModel> AddCategoryAsync(string name, string? description, Guid? categoryParentId);
         Task<List<CategoryDataModel>> GetActiveCategoriesAsync();
-        Task<CategoryUpdateResponseDataModel> UpdateCategoryAsync(Guid id, string name, string? description, Guid? categoryParentId);
+        Task<CategoryUpdateResponseDataModel> UpdateCategoryAsync(Guid id, string name, DateTimeOffset dateTimeLastUpdated, string? description, Guid? categoryParentId);
         Task<List<Category>> GetAllChildCategoryIdsAsync(Guid categoryId);
-        Task<CategoryDeleteResponseDataModel> DeleteCategoryAsync(Guid categoryId);
+        Task<CategoryDeleteResponseDataModel> DeleteCategoryAsync(Guid categoryId, DateTimeOffset dateTimeLastUpdated);
     }
 }

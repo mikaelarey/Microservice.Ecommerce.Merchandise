@@ -38,10 +38,10 @@ namespace Merchandise.Application.Controllers
         }
 
         [HttpDelete("Delete")]
-        public async Task<IActionResult> DeleteCategory(Guid id)
+        public async Task<IActionResult> DeleteCategory(CategoryDeleteRequestDto category)
         {
             // TODO: Fix the response
-            var result = await _categoryService.DeleteCategoryAsync(id);
+            var result = await _categoryService.DeleteCategoryAsync(category);
             return result.Status == RequestResponseStatus.Success ? Ok(result) : BadRequest(result);
         }
     }

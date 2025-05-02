@@ -186,7 +186,7 @@ namespace Merchandise.Domain.DomainServices
         #endregion
 
         #region DeleteProductImagesAsync
-        public async Task<IEnumerable<Guid>> DeleteProductImagesAsync(Guid productId, IEnumerable<Guid> imageIds)
+        public async Task<IEnumerable<(Guid Id, string FileName)>> DeleteProductImagesAsync(Guid productId, IEnumerable<Guid> imageIds)
         {
             var productImages = await _productImageRepository.GetProductImageProductById(productId);
 
@@ -194,7 +194,7 @@ namespace Merchandise.Domain.DomainServices
                 .Where(x => imageIds.Contains(x.Id))
                 .Select(x => x.Id);
 
-            var deletedProductIds = new List<Guid>();
+            var deletedProducts = new List<(Guid Id, string FileName)>();
 
             foreach (var id in productImageIds)
             {
@@ -204,17 +204,19 @@ namespace Merchandise.Domain.DomainServices
 
                 if (image != null)
                 {
-                    deletedProductIds.Add(id);
+                    var deleteProduct = (image.Id, image.ImageUrl);
+                    deletedProducts.Add(deleteProduct);
+
                     _productImageRepository.Remove(image);
                 }
             }
 
-            if (deletedProductIds.Any())
+            if (deletedProducts.Any())
             {
                 var result = await _productImageRepository.SaveChangesAsync();
             }
 
-            return deletedProductIds;
+            return deletedProducts;
         }
         #endregion
 

@@ -72,10 +72,10 @@
 			- Show all product details with that brand.
 
 3. Category Crud
-	- Create
-	- Read
-	- Update
-	- Delete
+	* Create
+	* Read
+	* Update
+	* Delete
 
 4. Product Crud (with images)
 	* Create

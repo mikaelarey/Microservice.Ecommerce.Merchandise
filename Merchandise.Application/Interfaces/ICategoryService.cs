@@ -9,6 +9,6 @@ namespace Merchandise.Application.Interfaces
         Task<CategoryAddResponseDto> AddCategoryAsync(CategoryAddRequestDto category);
         Task<List<CategoryDataModel>> GetActiveCategoriesAsync();
         Task<CategoryUpdateResponseDto> UpdateCategoryAsync(CategoryUpdateRequestDto category);
-        Task<CategoryDeleteResponseDataModel> DeleteCategoryAsync(Guid categoryId);
+        Task<CategoryDeleteResponseDataModel> DeleteCategoryAsync(CategoryDeleteRequestDto category);
     }
 }
