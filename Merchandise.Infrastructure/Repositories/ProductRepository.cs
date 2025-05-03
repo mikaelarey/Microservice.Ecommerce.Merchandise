@@ -74,5 +74,13 @@ namespace Merchandise.Infrastructure.Repositories
                 .Where(x => categoryIds.Contains(x.CategoryId) && !x.IsDeleted && x.IsActive && !x.IsArchived)
                 .ToListAsync();
         }
+
+        public async Task<IEnumerable<Product>> GetProductsByBrandAsync(Guid brandId)
+        {
+            return await _dbContext.Product
+                .AsNoTracking()
+                .Where(x => x.IsActive && !x.IsDeleted && !x.IsArchived && x.BrandId == brandId)
+                .ToListAsync();
+        }
     }
 }

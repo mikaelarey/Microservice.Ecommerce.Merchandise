@@ -12,5 +12,6 @@ namespace Merchandise.Domain.Interfaces.Repositories
         Task<Product?> GetProductByNameAndCategoryAndBrandAsync(string name, Guid categoryId, Guid brandId);
         Task<Product?> GetProductByNameAndCategoryAndBrandAndIdAsync(string name, Guid categoryId, Guid brandId, Guid id);
         Task<IEnumerable<Product>> GetProductsByCategoriesAsync(IEnumerable<Guid> categoryIds);
+        Task<IEnumerable<Product>> GetProductsByBrandAsync(Guid brandId);
     }
 }

@@ -10,11 +10,26 @@ namespace Merchandise.Domain.Models.Aggregates
 
         public Brand() { }
 
-        public Brand(string name, string logo, string description) : base()
+        public Brand(string name, string logo, string? description) : base()
         {
             Name = name;
             LogoUrl = logo;
             Description = description;
+        }
+
+        public void SetName(string name)
+        {
+            Name = name;
+        }
+
+        public void SetDescription(string? description)
+        {
+            Description = description;
+        }
+
+        public void SetLogoUrl(string logoUrl)
+        {
+            LogoUrl = logoUrl;
         }
     }
 }

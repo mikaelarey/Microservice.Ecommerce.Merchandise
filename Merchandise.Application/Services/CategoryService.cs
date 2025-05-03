@@ -4,16 +4,21 @@ using Merchandise.Application.Interfaces;
 using Merchandise.Domain.Constants;
 using Merchandise.Domain.DataModels.Categories;
 using Merchandise.Domain.Interfaces.DomainServices;
+using Merchandise.Domain.Interfaces.Repositories;
 
 namespace Merchandise.Application.Services
 {
     public class CategoryService : ICategoryService
     {
         private readonly ICategoryDomainService _categoryDomainService;
+        private readonly ICategoryRepository _categoryRepository;
 
-        public CategoryService(ICategoryDomainService categoryDomainService)
+        public CategoryService(
+            ICategoryDomainService categoryDomainService,
+            ICategoryRepository categoryRepository)
         {
             _categoryDomainService = categoryDomainService;
+            _categoryRepository = categoryRepository;
         }
 
         public async Task<CategoryAddResponseDto> AddCategoryAsync(CategoryAddRequestDto category)
@@ -43,6 +48,26 @@ namespace Merchandise.Application.Services
         public async Task<List<CategoryDataModel>> GetActiveCategoriesAsync()
         {
             return await _categoryDomainService.GetActiveCategoriesAsync();
+        }
+
+        public async Task<CategoryDetailResponseDto?> GetCategoryAsync(Guid id)
+        {
+            var category = await _categoryRepository.GetCategoryByIdAsync(id);
+
+            return category is null
+                ? null 
+                : new CategoryDetailResponseDto
+                {
+                    CreatedBy = category.CreatedBy,
+                    DateTimeCreated = category.DateTimeCreated,
+                    DateTimeLastUpdated = category.DateTimeLastUpdated,
+                    Description = category.Description,
+                    Id = category.Id,
+                    Name = category.Name,
+                    ParentCategoryId = category.ParentCategoryId,
+                    Status = category.IsActive ? "Active" : "Inactive",
+                    UpdatedBy = category.UpdatedBy
+                };
         }
 
         public async Task<CategoryUpdateResponseDto> UpdateCategoryAsync(CategoryUpdateRequestDto category)

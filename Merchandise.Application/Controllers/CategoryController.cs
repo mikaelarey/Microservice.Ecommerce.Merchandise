@@ -1,7 +1,6 @@
 ﻿using Merchandise.Application.Dtos.Requests.Category;
 using Merchandise.Application.Interfaces;
 using Merchandise.Domain.Constants;
-using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Merchandise.Application.Controllers
@@ -23,6 +22,13 @@ namespace Merchandise.Application.Controllers
             return Ok(result);
         }
 
+        [HttpGet("Detail/{id:guid}")]
+        public async Task<IActionResult> GetDetail(Guid id)
+        {
+            var result = await _categoryService.GetCategoryAsync(id);
+            return result is not null ? Ok(result) : NotFound();
+        }
+
         [HttpPost("Add")]
         public async Task<IActionResult> AddCategory(CategoryAddRequestDto category)
         {
@@ -38,7 +44,7 @@ namespace Merchandise.Application.Controllers
         }
 
         [HttpDelete("Delete")]
-        public async Task<IActionResult> DeleteCategory(CategoryDeleteRequestDto category)
+        public async Task<IActionResult> DeleteCategory([FromBody] CategoryDeleteRequestDto category)
         {
             // TODO: Fix the response
             var result = await _categoryService.DeleteCategoryAsync(category);

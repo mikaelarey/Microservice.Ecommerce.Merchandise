@@ -95,7 +95,7 @@ namespace Merchandise.Application.Controllers
 
         #region DELETE Delete Product Images
         [HttpDelete("DeleteImages")]
-        public async Task<IActionResult> DeleteProductImages(ProductImageDeleteRequestDto request)
+        public async Task<IActionResult> DeleteProductImages([FromBody] ProductImageDeleteRequestDto request)
         {
             // TODO: Check roles
             // TODO: Fix CreatedBy

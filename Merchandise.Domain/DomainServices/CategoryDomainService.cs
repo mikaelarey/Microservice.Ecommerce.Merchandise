@@ -52,7 +52,7 @@ namespace Merchandise.Domain.DomainServices
             var result = await _categoryRepository.SaveChangesAsync();
 
             response.Status = result ? RequestResponseStatus.Success : RequestResponseStatus.Failed;
-            response.ErrorMessage = CategoryMessage.AddErrorMessage;
+            response.ErrorMessage = result ? null : CategoryMessage.AddErrorMessage;
             response.Category = result ? category : null;
 
             return response;
@@ -119,7 +119,7 @@ namespace Merchandise.Domain.DomainServices
             var result = await _categoryRepository.SaveChangesAsync();
 
             response.Status = result ? RequestResponseStatus.Success : RequestResponseStatus.Failed;
-            response.ErrorMessage = CategoryMessage.AddErrorMessage;
+            response.ErrorMessage = result ? null : CategoryMessage.AddErrorMessage;
             response.Category = result ? category : null;
 
             return response;

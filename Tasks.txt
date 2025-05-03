@@ -50,25 +50,25 @@
 		- Email (Unique)
 
 2. Brand Crud
-	- Create
+	* Create
 		- Logo is required.
 		- Name is required.
 		- Description is optional.
 
-	- Read
+	* Read
 		- Show all brands.
 		- Show brand by id.
 		- Search By Name
 
-	- Update
+	* Update
 		- Name is required.
 		- Description is optional.
 		- Can change logo image (select from images uploaded)
 		- Can add another logo image
 		
-	- Delete
+	* Delete
 		- Soft delete (IsDeleted = true)
-		- If product details are associated with the brand, show a warning message and prevent brand from deletion.
+		- If products are associated with the brand, show a warning message and prevent brand from deletion.
 			- Show all product details with that brand.
 
 3. Category Crud
@@ -90,14 +90,27 @@
 	* Delete
 	- Athorization - Only admin can create, update and delete
 
-5. Variant Crud
+5. Variant Crud (TBA)
 	- Create
 	- Read
 	- Update
 	- Delete
 
-6. Attribute Crud
+6. Attribute Crud (TBA)
 	- Create
 	- Read
 	- Update
 	- Delete
+
+7. Ecommerce.Merchandise.ProductUpsertEvent
+	- Publish data on Add, Update and Delete event
+
+8. Ecommerce.Merchandise.BrandUpsertEvent
+	- Publish data on Add, Update and Delete event
+
+9. Ecommerce.Merchandise.CategoryUpsertEvent
+	- Publish data on Add, Update and Delete event
+
+10. Ecommerce.Merchandise.ProductImageUpsertEvent
+	- Publish data on Add, Update and Delete event
+
