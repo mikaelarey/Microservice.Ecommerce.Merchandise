@@ -16,10 +16,8 @@ namespace Merchandise.Infrastructure.Persistences
         public DbSet<Brand> Brand { get; set; }
         public DbSet<Category> Category { get; set; }
         public DbSet<AttributeValue> AttributeValue { get; set; }
-        public DbSet<Variant> Variant { get; set; }
         public DbSet<ProductImage> ProductImage { get; set; }
         public DbSet<UserAccount> UserAccount { get; set; }
-        public DbSet<ProductVariant> ProductVariant { get; set; }
         public DbSet<ProductAttribute> ProductAttribute { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
@@ -32,8 +30,6 @@ namespace Merchandise.Infrastructure.Persistences
             modelBuilder.ApplyConfiguration(new CategoryEntityConfiguration());
             modelBuilder.ApplyConfiguration(new CodeDecodeAttributeEntityConfiguration());
             modelBuilder.ApplyConfiguration(new AttributeValueEntityConfiguration());
-            modelBuilder.ApplyConfiguration(new VariantEntityConfiguration());
-            modelBuilder.ApplyConfiguration(new ProductVariantEntityConfiguration());
             modelBuilder.ApplyConfiguration(new ProductAttributeEntityConfiguration());
         }
     }
