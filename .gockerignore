@@ -1,0 +1,10 @@
+**/bin/
+**/obj/
+.vs/
+*.user
+*.suo
+*.swp
+*.tmp
+*.log
+docker-compose.override.yml
+.env

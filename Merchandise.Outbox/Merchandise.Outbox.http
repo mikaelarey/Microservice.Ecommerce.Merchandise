@@ -1,6 +1,0 @@
-@Merchandise.Outbox_HostAddress = http://localhost:5205
-
-GET {{Merchandise.Outbox_HostAddress}}/weatherforecast/
-Accept: application/json
-
-###
