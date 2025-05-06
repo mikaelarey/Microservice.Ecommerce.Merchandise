@@ -143,8 +143,7 @@ namespace Merchandise.Application.Services
                             Name = g.Key,
                             Values = g.Select(v => v.AttributeValue.Value).Distinct().ToList()
                         })
-                        .ToList(),
-                    Variants = productDetail.Variants.Select(x => x.Variant.Name).Distinct().ToList()
+                        .ToList()
                 }; ;
         }
 

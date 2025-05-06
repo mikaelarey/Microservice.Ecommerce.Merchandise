@@ -75,16 +75,6 @@ namespace Merchandise.Infrastructure.Queries
                              .Where(i => i.ProductId == product.Id)
                              .ToList()
 
-                          let variants = (from productVariant in _dbContext.ProductVariant
-                                          join variant in _dbContext.Variant
-                                            on productVariant.VariantId equals variant.Id
-                                          where productVariant.ProductId == product.Id
-                                          select new ProductVariantDataModel
-                                          {
-                                              ProductVariant = productVariant,
-                                              Variant = variant
-                                          }).ToList()
-
                           let attributes = (from codeAttribute in _dbContext.CodeDecodeAttribute
                                             join attributeValue in _dbContext.AttributeValue 
                                                 on codeAttribute.Id equals attributeValue.AttributeNameId
@@ -108,7 +98,6 @@ namespace Merchandise.Infrastructure.Queries
                               Category = category,
                               Brand = brand,
                               Images = images,
-                              Variants = variants,
                               Attributes = attributes
                           }).FirstOrDefaultAsync();
         }

@@ -8,15 +8,10 @@ namespace Merchandise.Domain.DataModels.Products
         public Category Category { get; set; }
         public Brand Brand { get; set; }
         public List<ProductImage> Images { get; set; }
-        public List<ProductVariantDataModel> Variants { get; set; }
         public List<ProductAttributeDataModel> Attributes { get; set; }
     }
 
-    public class ProductVariantDataModel
-    {
-        public ProductVariant ProductVariant { get; set; }
-        public Variant Variant { get; set; }
-    }
+   
 
     public class ProductAttributeDataModel
     {
