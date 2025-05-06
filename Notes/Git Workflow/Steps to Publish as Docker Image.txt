@@ -1,0 +1,146 @@
+1. Create a Dockerfile
+Inside the root of your ASP.NET Core project, create a file named Dockerfile (no extension):
+
+============================================================================================
+# Stage 1: Build
+FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
+WORKDIR /src
+
+# Copy the solution and all project files
+COPY *.sln ./
+COPY Merchandise.WebApi/*.csproj Merchandise.WebApi/
+COPY Merchandise.Domain/*.csproj Merchandise.Domain/
+COPY Merchandise.Infrastructure/*.csproj Merchandise.Infrastructure/
+COPY Merchandise.Application/*.csproj Merchandise.Application/
+
+# Restore dependencies
+RUN dotnet restore
+
+# Copy the rest of the code
+COPY . ./
+
+# Publish the web app
+RUN dotnet publish Merchandise.WebApi/Merchandise.WebApi.csproj -c Release -o /app/publish
+
+# Stage 2: Runtime
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS runtime
+WORKDIR /app
+COPY --from=build /app/publish .
+
+ENTRYPOINT ["dotnet", "Merchandise.WebApi.dll"]
+============================================================================================
+🔁 Replace MyApp.dll with your actual project DLL name.
+
+
+
+============================================================================================
+2. Build the Docker Image
+Open a terminal in the folder with your Dockerfile, then run:
+
+docker build -t myapp-image .
+This command builds the image and tags it as myapp-image.
+
+
+
+============================================================================================
+3. Run the Docker Container
+You can now run your app in a container:
+
+docker run -d -p 8080:80 --name myapp-container myapp-image
+This maps your container’s port 80 to your host’s port 8080. Access it via http://localhost:8080.
+
+
+
+============================================================================================
+How to test?
+============================================================================================
+
+✅ 1. Find Your Image
+You can list all Docker images on your machine using:
+
+docker images
+Look for your image name (e.g., ecommerce.merchandise-image) in the output. It should show something like:
+
+============================================================================================
+
+REPOSITORY                    TAG       IMAGE ID       CREATED         SIZE
+ecommerce.merchandise-image  latest    abc123def456   X minutes ago   XXXMB
+============================================================================================
+
+
+
+✅ 2. Run the Image as a Container
+Use this command to start your image:
+
+docker run -d -p 8080:80 --name ecommerce-app ecommerce.merchandise-image
+
+-d: Runs in detached mode
+-p 8080:80: Maps port 80 from the container to 8080 on your local machine
+--name ecommerce-app: Names the container
+============================================================================================
+
+
+
+✅ 3. Test in Browser or Curl
+
+Open your browser and go to:
+http://localhost:8080
+
+Or test via curl:
+curl http://localhost:8080
+
+If your app is working correctly, you should see a response (e.g., an HTML page or JSON, depending on your API/web setup).
+============================================================================================
+
+
+
+🛠 4. Check Container Logs (Optional)
+If it doesn't work as expected, check the logs:
+
+docker logs ecommerce-app
+============================================================================================
+
+
+
+🧼 5. Stop & Remove the Container (Optional)
+
+To stop the running container:
+docker stop ecommerce-app
+
+To remove it:
+docker rm ecommerce-app
+============================================================================================
+
+
+
+============================================================================================
+How To Create Doceker Compose File together with the database
+============================================================================================
+
+Docker Compose File
+============================================================================================
+version: '3.8'
+
+services:
+  sqlserver-merchandise:
+    image: mcr.microsoft.com/mssql/server:2022-latest
+    container_name: sqlserver-merchandise
+    environment:
+      ACCEPT_EULA: "Y"
+      SA_PASSWORD: "YourStrong!Password"
+      # MSSQL_PID: "Developer"
+    ports:
+      - "1433:1433"
+
+  ecommerce-app:
+    image: ecommerce.merchandise-image
+    depends_on:
+      - sqlserver-merchandise
+    environment:
+      - ASPNETCORE_URLS=http://0.0.0.0:80
+    ports:
+      - "8080:80"
+============================================================================================
+Make sure in the connection string that you put the sqlserver-merchandise as server since
+this is the name of the instance of sql server
+============================================================================================
